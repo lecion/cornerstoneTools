@@ -1,6 +1,6 @@
 {
   "name": "cornerstone-tools",
-  "version": "0.0.0-semantically-released",
+  "version": "6.0.9-alpha.2",
   "description": "Medical imaging tools for the Cornerstone library",
   "main": "./dist/cornerstoneTools.js",
   "keywords": [
@@ -37,7 +37,6 @@
     "lint": "eslint -c .eslintrc.js --fix src && prettier --single-quote --write src/**/*.{js,json,css}",
     "prepublishOnly": "npm run build",
     "start": "npm run build:prod && npm run build:dev",
-    "test": "npm run test:unit",
     "test:unit": "jest --clearCache && jest --runInBand \\.test\\.js$",
     "test:ci": "npm run test:unit && codecov",
     "version": "node -p -e \"'export default \\'' + require('./package.json').version + '\\';'\" > src/version.js"
